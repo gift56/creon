@@ -40,6 +40,13 @@ const Vision = () => {
               >
                 <div className="w-full flex items-center justify-between gap-3">
                   <div></div>
+                  <span className="cursor-pointer">
+                    {faqAnswer === i ? (
+                      <HiMinus size={18} />
+                    ) : (
+                      <HiPlus size={18} />
+                    )}
+                  </span>
                 </div>
               </div>
             ))}
