@@ -1,11 +1,12 @@
 "use client";
 import { useState } from "react";
 import VideoPlayer from "./Video/VideoPlayer";
+import { visionData } from "@/constant";
 
 const Vision = () => {
-  const [faqAnswer, setFaqAnswer] = useState(null);
+  const [faqAnswer, setFaqAnswer] = useState<null | number>(null);
 
-  const handleToggle = (key: any) => {
+  const handleToggle = (key: number) => {
     if (faqAnswer === key) {
       setFaqAnswer(null);
     } else {
@@ -31,7 +32,13 @@ const Vision = () => {
             />
           </div>
           <div className="w-full lg:flex-1 flex flex-col items-start justify-start">
-            {}
+            {visionData.map((item, index) => (
+              <div
+                key={index}
+                onClick={() => handleToggle(index)}
+                className="w-full flex flex-col items-start justify-start py-4 cursor-pointer"
+              ></div>
+            ))}
           </div>
         </div>
       </div>
