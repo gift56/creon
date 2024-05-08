@@ -8,7 +8,7 @@ const Profit = () => {
           <h3 className="text-white text-3xl md:text-5xl lg:leading-[74.8px] font-normal font-monument uppercase">
             Profiting Through
           </h3>
-          <p className="text-xl md:text-2xl lg:text-3xl font-normal font-monument text-end w-full bg-clip-text text-transparent bg-textgradient">
+          <p className="text-xl md:text-2xl lg:text-3xl font-normal font-monument text-end w-full bg-clip-text text-transparent bg-textgradient uppercase">
             AI Innovation & Decentralization
           </p>
         </div>
