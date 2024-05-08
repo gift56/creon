@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { MdClose } from "react-icons/md";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaDiscord, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 
 const navLinks = [
   {
@@ -26,6 +26,21 @@ const navLinks = [
     text: "AI Launchpad",
     href: "/launchpad",
     soonText: true,
+  },
+];
+
+const socailIcons = [
+  {
+    icon: FaTelegramPlane,
+    href: "https://telegram.com",
+  },
+  {
+    icon: FaDiscord,
+    href: "https://discord.com",
+  },
+  {
+    icon: FaTwitter,
+    href: "https://telegram.com",
   },
 ];
 
