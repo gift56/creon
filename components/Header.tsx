@@ -155,7 +155,7 @@ const Header = () => {
           </div>
           <div className="flex items-center justify-start gap-4">
             {socialIcons.map((item, index) => (
-              <Link key={index} href={item.href} target="_blank" rel="noopener noreferrer">
+              <Link key={index} href={item.href} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border-2 border-white">
                 <item.icon />
               </Link>
             ))}
