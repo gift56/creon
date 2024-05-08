@@ -1,4 +1,5 @@
 import React from "react";
+import VideoPlayer from "./Video/VideoPlayer";
 
 const PassNft = () => {
   const passData = [
@@ -11,7 +12,7 @@ const PassNft = () => {
   return (
     <section id="pass" className="bg-black py-14 lg:py-20">
       <div className="contain">
-        <div className="w-full flex flex-col lg:flex-row items-start justify-start lg:justify-between gap-8">
+        <div className="w-full flex flex-col lg:flex-row lg:items-center items-start justify-start lg:justify-between gap-8">
           <div className="w-full lg:flex-1 flex flex-col items-start justify-start gap-8">
             <h2 className="text-white text-3xl md:text-5xl lg:leading-[74.8px] font-normal font-monument uppercase">
               creon pass nft
@@ -31,9 +32,20 @@ const PassNft = () => {
                 </p>
               ))}
             </div>
-            <button type="button" className="bg-textgradient outline-none border-none py-3 px-28 rounded-md text-lg font-bold text-white font-satoshi">Buy Creon Pass</button>
+            <button
+              type="button"
+              className="bg-textgradient outline-none border-none py-3 px-28 rounded-md text-lg font-bold text-white font-satoshi"
+            >
+              Buy Creon Pass
+            </button>
           </div>
-          <div className="w-full lg:flex-1"></div>
+          <div className="w-full lg:flex-1">
+            <VideoPlayer
+              thumbnailUrl="/images/passthumbnail.png"
+              videoUrl="/videos/nft-video.mp4"
+              className="!w-full"
+            />
+          </div>
         </div>
       </div>
     </section>
