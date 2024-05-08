@@ -37,7 +37,8 @@ const VideoPlayer = ({ videoUrl, thumbnailUrl, className }: VideoProp) => {
       {showVideo && (
         <video autoPlay muted loop onLoadedData={handleVideoLoad}>
           <source src={videoUrl} type="video/mp4" />
-          Your browser does not support the video tag.
+          <source src={videoUrl} type="video/ogg" />
+          <source src={videoUrl} type="video/mpv" />
         </video>
       )}
     </div>
