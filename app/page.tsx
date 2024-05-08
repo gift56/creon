@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Market from "@/components/Market";
 import PassNft from "@/components/PassNft";
 import Profit from "@/components/Profit";
 import Token from "@/components/Token";
@@ -12,6 +13,7 @@ export default function Home() {
       <Profit />
       <Vision />
       <Token />
+      <Market />
     </main>
   );
 }

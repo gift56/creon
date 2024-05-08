@@ -2,7 +2,7 @@ import VideoPlayer from "./Video/VideoPlayer";
 
 const Profit = () => {
   return (
-    <section className="bg-black py-14 lg:py-20">
+    <section id="revenue" className="bg-black py-14 lg:py-20">
       <div className="contain">
         <div className="w-full flex flex-col items-start gap-3">
           <h3 className="text-white text-3xl md:text-5xl lg:leading-[74.8px] font-normal font-monument uppercase">
