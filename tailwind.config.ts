@@ -15,8 +15,8 @@ const config: Config = {
         textgradient: "linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%)",
       },
       fontFamily: {
-        satoshi: "Satoshi",
-        monument: "Monument",
+        satoshi: ["Satoshi", "sans-serif"],
+        monument: ["Monument Extended", "sans-serif"],
       },
     },
   },

@@ -4,15 +4,15 @@
 
 @font-face {
   font-family: "Satoshi", sans-serif;
-  src: url("/public/fonts/Satoshi-Bold.woff2") format("woff2"),
-    url("/public/fonts/Satoshi-Medium.woff2") format("woff2"),
-    url("/public/fonts/Satoshi-Regular.woff2") format("woff2");
+  src: url("/fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("/fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("/fonts/Satoshi-Regular.woff2") format("woff2");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monument Extended";
-  src: url("/public/fonts/MonumentExtended-Regular.woff2") format("woff2");
+  src: url("/fonts/MonumentExtended-Regular.woff2") format("woff2");
   font-style: normal;
 }
 @layer base {
