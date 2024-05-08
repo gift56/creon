@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MdClose } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
 
@@ -91,6 +91,12 @@ const Header = () => {
             Connect
           </button>
         </nav>
+        <span
+          onClick={() => setMobileNav((prev) => !prev)}
+          className="w-10 h-10 flex tab:hidden items-center justify-center bg-white text-primary rounded-lg"
+        >
+          {mobileNav ? <MdClose size={25} /> : <FaBars size={25} />}
+        </span>
       </nav>
     </header>
   );
