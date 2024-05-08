@@ -31,6 +31,7 @@ const PassNft = () => {
                 </p>
               ))}
             </div>
+            <button type="button" className="bg-textgradient outline-none border-none py-3 px-28 rounded-md text-lg font-bold text-white font-satoshi">Buy Creon Pass</button>
           </div>
           <div className="w-full lg:flex-1"></div>
         </div>
