@@ -3,13 +3,16 @@ import Image from "next/image";
 
 const Market = () => {
   return (
-    <section id="launchpad" className="min-h-screen lg:py-30 relative bg-black/50">
+    <section
+      id="launchpad"
+      className="min-h-screen lg:py-30 relative bg-black/50"
+    >
       <div className="absolute -bottom-10 w-full h-full">
         <video autoPlay muted loop className="w-full h-full object-cover">
           <source src="/videos/roadmap-video.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="w-full bg-[#13171D99] relative top-0 z-10 flex flex-col gap-6 items-center justify-center">
+      <div className="w-full relative top-0 z-20 flex flex-col gap-6 items-center justify-center">
         {marketData.map((item, index) => (
           <div
             key={index}
