@@ -107,7 +107,7 @@ const Header = () => {
           onClick={() => setMobileNav((prev) => !prev)}
           className="w-10 h-10 flex tab:hidden items-center justify-center bg-white text-primary rounded-lg"
         >
-          {mobileNav ? <MdClose size={25} /> : <FaBars size={25} />}
+          {mobileNav === false && <FaBars size={25} />}
         </span>
       </nav>
     </header>
