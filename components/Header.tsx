@@ -29,21 +29,6 @@ const navLinks = [
   },
 ];
 
-const socailIcons = [
-  {
-    icon: FaTelegramPlane,
-    href: "https://telegram.com",
-  },
-  {
-    icon: FaDiscord,
-    href: "https://discord.com",
-  },
-  {
-    icon: FaTwitter,
-    href: "https://telegram.com",
-  },
-];
-
 const Header = () => {
   const [mobileNav, setMobileNav] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
