@@ -23,7 +23,12 @@ const PassNft = () => {
             </p>
             <div className="w-full flex flex-col items-start justify-start gap-5">
               {passData.map((item, index) => (
-                <p key={index}>{item}</p>
+                <p
+                  key={index}
+                  className="text-base md:text-lg border border-[#13171D] py-2 px-5 rounded-md font-normal text-white"
+                >
+                  {item}
+                </p>
               ))}
             </div>
           </div>
