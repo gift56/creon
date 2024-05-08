@@ -2,9 +2,10 @@
 import { useState } from "react";
 import VideoPlayer from "./Video/VideoPlayer";
 import { visionData } from "@/constant";
+import { IoChevronDown } from "react-icons/io5";
 
 const Vision = () => {
-  const [faqAnswer, setFaqAnswer] = useState<null | number>(null);
+  const [faqAnswer, setFaqAnswer] = useState<null | number>(0);
 
   const handleToggle = (key: number) => {
     if (faqAnswer === key) {
@@ -32,20 +33,16 @@ const Vision = () => {
             />
           </div>
           <div className="w-full lg:flex-1 flex flex-col items-start justify-start">
-            {visionData.map((item, index) => (
+            {visionData.map((item, i) => (
               <div
-                key={index}
-                onClick={() => handleToggle(index)}
+                key={i}
+                onClick={() => handleToggle(i)}
                 className="w-full flex flex-col items-start justify-start py-4 cursor-pointer border-b border-[#13171D]"
               >
                 <div className="w-full flex items-center justify-between gap-3">
                   <div></div>
                   <span className="cursor-pointer">
-                    {faqAnswer === i ? (
-                      <HiMinus size={18} />
-                    ) : (
-                      <HiPlus size={18} />
-                    )}
+                    <IoChevronDown className={`${faqAnswer === i ? "rotate-[180deg]" : ""} transition-all duration-200`} />
                   </span>
                 </div>
               </div>
