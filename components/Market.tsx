@@ -13,13 +13,13 @@ const Market = () => {
         </video>
       </div>
       <div className="contain">
-        <div className="w-full relative top-0 z-20 flex flex-col gap-6 items-center justify-center">
+        <div className="w-full relative top-0 z-20 flex flex-col gap-6 items-center justify-center group">
           {marketData.map((item, index) => (
             <div
               key={index}
-              className="w-full lg:h-[302px] bg-[#13171D99]  flex flex-col-reverse lg:flex-row  items-start justify-start gap-10 lg:items-center lg:justify-between  rounded-md overflow-hidden"
+              className="w-full lg:h-[302px] bg-[#13171D99]  flex flex-col-reverse lg:flex-row items-start justify-start gap-10 lg:items-center lg:justify-between  rounded-md overflow-hidden"
             >
-              <div className="flex flex-col px-4 justify-center gap-5 h-full">
+              <div className="flex flex-col px-4 justify-center gap-5 h-full w-full lg:flex-1">
                 <h3 className="text-white text-2xl md:text-[31px] biglaptop:text-4xl lg:leading-[45.8px] font-normal font-monument uppercase">
                   {item.title}
                 </h3>
@@ -27,7 +27,7 @@ const Market = () => {
                   {item.desc}
                 </p>
               </div>
-              <div className="lg:!w-[1551px]">
+              <div className="w-full lg:flex-[0.5]">
                 <Image
                   src={item.image}
                   alt="market images"
