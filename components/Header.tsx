@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Header = () => {
@@ -26,7 +27,11 @@ const Header = () => {
         isScrolled ? "bg-black/80" : "bg-transparent"
       }`}
     >
-      <nav className="w-full"></nav>
+      <nav className="w-full px-[40px] flex items-center justify-between">
+        <Link href="/">
+          <Image />
+        </Link>
+      </nav>
     </header>
   );
 };
