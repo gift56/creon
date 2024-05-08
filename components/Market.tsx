@@ -3,22 +3,19 @@ import Image from "next/image";
 
 const Market = () => {
   return (
-    <section
-      id="launchpad"
-      className="min-h-screen lg:pt-30 pb-10 relative bg-black/50"
-    >
-      <div className="absolute top-0 w-full h-full">
+    <section id="launchpad" className="min-h-screen lg:py-30 relative bg-black/50">
+      <div className="absolute -bottom-10 w-full h-full">
         <video autoPlay muted loop className="w-full h-full object-cover">
           <source src="/videos/roadmap-video.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="w-full h-screen bg-[#13171D99] relative top-0 z-10 flex flex-col gap-5 items-center justify-center">
+      <div className="w-full bg-[#13171D99] relative top-0 z-10 flex flex-col gap-6 items-center justify-center">
         {marketData.map((item, index) => (
           <div
             key={index}
-            className="w-[90%] h-[302px] bg-[#13171D99] flex flex-col-reverse lg:flex-row  items-start justify-start gap-10 lg:items-center lg:justify-between"
+            className="w-[90%] lg:h-[302px] bg-[#13171D99]  flex flex-col-reverse lg:flex-row  items-start justify-start gap-10 lg:items-center lg:justify-between  rounded-md overflow-hidden"
           >
-            <div className="flex flex-col px-4 gap-5 h-full">
+            <div className="flex flex-col px-4 justify-center gap-5 h-full">
               <h3 className="text-white text-2xl md:text-[31px] biglaptop:text-4xl lg:leading-[45.8px] font-normal font-monument uppercase">
                 {item.title}
               </h3>
@@ -33,7 +30,7 @@ const Market = () => {
                 width={453}
                 height={304}
                 priority
-                className="!w-full !h-[304px] lg:!w-[453px]"
+                className="!w-full !h-[304px] lg:!w-[1551px] rounded-tl-md rounded-tr-md lg:rounded-tl-none lg:rounded-br-md"
               />
             </div>
           </div>
