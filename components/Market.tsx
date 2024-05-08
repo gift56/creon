@@ -23,11 +23,11 @@ const Market = () => {
                 <h3 className="text-white text-2xl md:text-[31px] biglaptop:text-4xl lg:leading-[45.8px] font-normal font-monument uppercase">
                   {item.title}
                 </h3>
-                <p className="text-lg font-bold font-satoshi text-white">
+                <p className="text-lg font-bold font-satoshi text-white lg:max-w-[907px]">
                   {item.desc}
                 </p>
               </div>
-              <div className="lg:!w-[1551px] ">
+              <div className="lg:!w-[1551px]">
                 <Image
                   src={item.image}
                   alt="market images"
