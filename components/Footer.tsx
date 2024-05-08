@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-black pb-6">
       <div className="contain">
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-5">
-          <div className="w-full flex items-start justify-start gap-3 md:gap-6">
+          <div className="w-full lg:w-fit flex items-start justify-start gap-3 md:gap-6">
             <p className="text-base font-normal text-white font-satoshi">
               © Creon 2023. All rights reserved.
             </p>
@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-base font-normal text-white font-satoshi flex items-center gap-1">
-            Powered by{" "}
+            <span>Powered by</span>
             <Image
               src="/images/nftlogo.png"
               alt="nftables logo"
