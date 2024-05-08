@@ -3,6 +3,7 @@ import { useState } from "react";
 import VideoPlayer from "./Video/VideoPlayer";
 import { visionData } from "@/constant";
 import { IoChevronDown } from "react-icons/io5";
+import Image from "next/image";
 
 const Vision = () => {
   const [faqAnswer, setFaqAnswer] = useState<null | number>(0);
@@ -40,9 +41,15 @@ const Vision = () => {
                 className="w-full flex flex-col items-start justify-start py-4 cursor-pointer border-b border-[#13171D]"
               >
                 <div className="w-full flex items-center justify-between gap-3">
-                  <div></div>
+                  <div className="flex items-center justify-start gap-4">
+                    <Image src={item.image} alt="vision icons" width={56} height={62} className="" priority />
+                  </div>
                   <span className="cursor-pointer">
-                    <IoChevronDown className={`${faqAnswer === i ? "rotate-[180deg]" : ""} transition-all duration-200`} />
+                    <IoChevronDown
+                      className={`${
+                        faqAnswer === i ? "rotate-[180deg]" : ""
+                      } transition-all duration-200`}
+                    />
                   </span>
                 </div>
               </div>
