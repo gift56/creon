@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -27,9 +28,15 @@ const Header = () => {
         isScrolled ? "bg-black/80" : "bg-transparent"
       }`}
     >
-      <nav className="w-full px-[40px] flex items-center justify-between">
+      <nav className="w-full px-[40px] flex items-center justify-between py-4">
         <Link href="/">
-          <Image />
+          <Image
+            src="/images/logo.png"
+            alt="creon logo"
+            width={140}
+            height={39}
+            priority
+          />
         </Link>
       </nav>
     </header>
