@@ -4,6 +4,29 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+const navLinks = [
+  {
+    text: "Creon Pass",
+    href: "/",
+    soonText: false,
+  },
+  {
+    text: "Token",
+    href: "/token",
+    soonText: true,
+  },
+  {
+    text: "AI Revenue",
+    href: "/token",
+    soonText: true,
+  },
+  {
+    text: "AI Launchpad",
+    href: "/token",
+    soonText: true,
+  },
+];
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
@@ -22,6 +45,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${
@@ -53,7 +77,10 @@ const Header = () => {
             href="/token"
             className="text-base md:text-lg font-semibold text-white font-satoshi flex items-start justify-start gap-2"
           >
-            Token <span className="text-primary bg-black text-xs font-satoshi rounded-full py-0.5 px-1">SOON</span>
+            Token{" "}
+            <span className="text-primary bg-black text-xs font-satoshi rounded-full py-0.5 px-1">
+              SOON
+            </span>
           </Link>
         </nav>
       </nav>
