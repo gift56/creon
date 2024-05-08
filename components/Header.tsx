@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { MdClose } from "react-icons/md";
+import { FaBars } from "react-icons/fa";
 
 const navLinks = [
   {
@@ -67,7 +69,7 @@ const Header = () => {
             className="!w-[120px]"
           />
         </Link>
-        <nav className="flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((item, index) => (
             <Link
               href={item.href}
