@@ -66,7 +66,7 @@ const Header = () => {
             className="!w-[120px]"
           />
         </Link>
-        <nav>
+        <nav className="flex items-center gap-6">
           {navLinks.map((item, index) => (
             <Link
               href={item.href}
