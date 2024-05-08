@@ -2,9 +2,16 @@ const Market = () => {
   return (
     <section
       id="launchpad"
-      className="min-h-screen lg:pt-30 pb-10 relative flex flex-col items-start justify-end bg-black/50"
+      className="min-h-screen lg:pt-30 pb-10 relative bg-black/50"
     >
-      Market
+      <div className="absolute top-0 w-full h-full">
+        <video autoPlay muted loop className="w-full h-full object-cover">
+          <source src="/videos/roadmap-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div className="w-full h-full bg-[#13171D99] relative top-0 z-10 flex flex-col gap-5 items-start justify-center">
+        hello
+      </div>
     </section>
   );
 };
