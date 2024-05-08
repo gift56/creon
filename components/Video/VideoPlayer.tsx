@@ -1,13 +1,15 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 type VideoProp = {
   videoUrl: string;
   thumbnailUrl: string;
+  className: string;
 };
 
-const VideoPlayer = ({ videoUrl, thumbnailUrl }: VideoProp) => {
+const VideoPlayer = ({ videoUrl, thumbnailUrl, className }: VideoProp) => {
   const [showVideo, setShowVideo] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
@@ -22,10 +24,14 @@ const VideoPlayer = ({ videoUrl, thumbnailUrl }: VideoProp) => {
   return (
     <div>
       {!showVideo && !videoLoaded && (
-        <img
+        <Image
           src={thumbnailUrl}
           alt="Video Thumbnail"
           onClick={handleThumbnailClick}
+          width={1000}
+          height={1000}
+          className={`${className}`}
+          priority
         />
       )}
       {showVideo && (
