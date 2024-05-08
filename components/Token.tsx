@@ -1,4 +1,5 @@
 import { tokenData } from "@/constant";
+import Image from "next/image";
 
 const Token = () => {
   return (
@@ -18,6 +19,7 @@ const Token = () => {
                   {item.subtitle}
                 </p>
               </div>
+              <Image src={item.image} alt="token images nft" width={900} height={234} priority />
             </div>
           ))}
         </div>
