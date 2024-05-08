@@ -28,7 +28,7 @@ const Header = () => {
         isScrolled ? "bg-black/80" : "bg-transparent"
       }`}
     >
-      <nav className="w-full px-[40px] flex items-center justify-between py-4">
+      <nav aria-label="navigation" className="w-full px-[40px] flex items-center justify-between py-4">
         <Link href="/">
           <Image
             src="/images/logo.png"
@@ -36,8 +36,10 @@ const Header = () => {
             width={140}
             height={39}
             priority
+            className="!w-[120px]"
           />
         </Link>
+
       </nav>
     </header>
   );
