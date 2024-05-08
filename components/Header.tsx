@@ -118,12 +118,39 @@ const Header = () => {
       >
         <div
           ref={modalRef}
-          className="flex flex-col h-full bg-white gap-5 p-4 w-[250px]"
+          className="flex flex-col items-start justify-between h-full bg-black text-white p-4 w-[250px]"
         >
-          <div className="w-full flex items-center justify-end">
-            <span className="text-dark" onClick={() => setMobileNav(false)}>
-              <MdClose size={25} />
-            </span>
+          <div className="w-full flex flex-col items-start gap-8">
+            <div className="w-full flex items-center justify-end gap-6">
+              <button
+                type="button"
+                className="text-base md:text-lg font-semibold text-white font-satoshi outline-none border-2 border-white py-2 px-8 rounded-md hover:bg-primary transition-all duration-300 hover:border-primary"
+              >
+                Connect
+              </button>
+              <span
+                className="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-lg"
+                onClick={() => setMobileNav(false)}
+              >
+                <MdClose size={25} />
+              </span>
+            </div>
+            <nav className="flex flex-col w-full items-start justify-start gap-6">
+              {navLinks.map((item, index) => (
+                <Link
+                  href={item.href}
+                  key={index}
+                  className="text-base md:text-lg font-semibold text-white font-satoshi flex items-start justify-start gap-2"
+                >
+                  {item.text}{" "}
+                  {item.soonText === true && (
+                    <span className="text-primary bg-black text-xs font-satoshi rounded-full py-0.5 px-1">
+                      SOON
+                    </span>
+                  )}
+                </Link>
+              ))}
+            </nav>
           </div>
         </div>
       </div>
