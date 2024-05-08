@@ -154,9 +154,9 @@ const Header = () => {
             </nav>
           </div>
           <div className="flex items-center justify-start gap-4">
-            {socialIcons.map((item,indes)=>(
-              <Link href={item.href} target="_blank" rel="noopener noreferrer">
-                
+            {socialIcons.map((item, index) => (
+              <Link key={index} href={item.href} target="_blank" rel="noopener noreferrer">
+                <item.icon />
               </Link>
             ))}
           </div>
