@@ -14,15 +14,21 @@ const Header = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  return <header className={`w-full bg-transparent`}>
-    
-  </header>;
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${
+        isScrolled ? "bg-black/80" : "bg-transparent"
+      }`}
+    >
+      <nav className="w-full"></nav>
+    </header>
+  );
 };
 
 export default Header;
