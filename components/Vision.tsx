@@ -38,7 +38,9 @@ const Vision = () => {
                 onClick={() => handleToggle(index)}
                 className="w-full flex flex-col items-start justify-start py-4 cursor-pointer border-b border-[#13171D]"
               >
-
+                <div className="w-full flex items-center justify-between gap-3">
+                  <div></div>
+                </div>
               </div>
             ))}
           </div>
