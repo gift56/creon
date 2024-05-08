@@ -1,4 +1,4 @@
-import {  FaDiscord, FaTelegramPlane, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 
 export const visionData = [
   {
@@ -6,8 +6,7 @@ export const visionData = [
   },
 ];
 
-
-const socailIcons = [
+export const socailIcons = [
   {
     icon: FaTelegramPlane,
     href: "https://telegram.com",
