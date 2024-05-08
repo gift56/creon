@@ -14,6 +14,9 @@ const config: Config = {
           "linear-gradient(174.64deg, #000000 4.29%, #3D8BFF 47.39%, #AB23FF 95.05%)",
         textgradient: "linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%)",
       },
+      fontFamily: {
+        Satoshi: "Satoshi",
+      },
     },
   },
   plugins: [],

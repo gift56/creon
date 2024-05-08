@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Satoshi", sans-serif;
+  src: url("/public/fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("/public/fonts/Satoshi-Regular.woff2") format("woff2");
+  font-style: normal;
+}
+
 ::selection {
   background-color: #ab23ff;
   color: white;
