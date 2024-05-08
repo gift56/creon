@@ -22,7 +22,7 @@ const VideoPlayer = ({ videoUrl, thumbnailUrl, className }: VideoProp) => {
   };
 
   return (
-    <div>
+    <div className={`${className}`}>
       {!showVideo && !videoLoaded && (
         <Image
           src={thumbnailUrl}
@@ -39,7 +39,7 @@ const VideoPlayer = ({ videoUrl, thumbnailUrl, className }: VideoProp) => {
           autoPlay
           muted
           loop
-          onLoadedData={handleVideoLoad}
+          onLoadedData={() => alert("ready")}
           className={`${className}`}
         >
           <source src={videoUrl} type="video/mp4" />
