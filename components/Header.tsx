@@ -28,6 +28,7 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const [mobileNav, setMobileNav] = useState(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
