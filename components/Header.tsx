@@ -11,22 +11,22 @@ import { socialIcons } from "@/constant";
 const navLinks = [
   {
     text: "Creon Pass",
-    href: "/pass",
+    href: "pass",
     soonText: false,
   },
   {
     text: "Token",
-    href: "/token",
+    href: "token",
     soonText: true,
   },
   {
     text: "AI Revenue",
-    href: "/revenue",
+    href: "revenue",
     soonText: true,
   },
   {
     text: "AI Launchpad",
-    href: "/launchpad",
+    href: "launchpad",
     soonText: true,
   },
 ];
