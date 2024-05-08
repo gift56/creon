@@ -52,7 +52,7 @@ export const marketData = [
   {
     title: "AI Prospects, Market Size, and Development Pace",
     desc: "The AI market is one of the most dynamically growing areas of technology. According to reports, the global AI market is expected to reach $190.61 billion by 2025, with a CAGR (Compound Annual Growth Rate) of 36.6%. The key drivers behind this growth include advancements in machine learning, increasing demand for big data analytics, and growing adoption of AI technology across various sectors such as healthcare, finance, and transportation.",
-    image: "/images/marketImage.png",
+    image: "/images/marketImage1.png",
   },
 ];
 
