@@ -30,7 +30,9 @@ const Vision = () => {
               className="!w-full"
             />
           </div>
-          <div className="w-full lg:flex-1"></div>
+          <div className="w-full lg:flex-1 flex flex-col items-start justify-start">
+            {}
+          </div>
         </div>
       </div>
     </section>
