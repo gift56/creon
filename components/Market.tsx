@@ -1,3 +1,5 @@
+import { marketData } from "@/constant";
+
 const Market = () => {
   return (
     <section
@@ -9,8 +11,10 @@ const Market = () => {
           <source src="/videos/roadmap-video.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="w-full h-full bg-[#13171D99] relative top-0 z-10 flex flex-col gap-5 items-start justify-center">
-        hello
+      <div className="w-full h-screen bg-[#13171D99] relative top-0 z-10 flex flex-col gap-5 items-center justify-center">
+        {marketData.map((item, index) => (
+          <div key={index} className="w-[90%]"></div>
+        ))}
       </div>
     </section>
   );
