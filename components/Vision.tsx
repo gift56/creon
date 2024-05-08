@@ -50,7 +50,7 @@ const Vision = () => {
                       className="!w-[56px] !h-[62px] md:!w-[100px] md:!h-[114px]"
                       priority
                     />
-                    <h4 className="select-none text-lg md:text-xl font-bold font-satoshi text-white lg:max-w-[360px]">{item.title}</h4>
+                    <h4 className="select-none text-lg md:text-xl font-bold font-satoshi text-white lg:max-w-[316px]">{item.title}</h4>
                   </div>
                   <span className="cursor-pointer">
                     <IoChevronDown
