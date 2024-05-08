@@ -35,7 +35,13 @@ const VideoPlayer = ({ videoUrl, thumbnailUrl, className }: VideoProp) => {
         />
       )}
       {showVideo && (
-        <video autoPlay muted loop onLoadedData={handleVideoLoad}>
+        <video
+          autoPlay
+          muted
+          loop
+          onLoadedData={handleVideoLoad}
+          className={`${className}`}
+        >
           <source src={videoUrl} type="video/mp4" />
           <source src={videoUrl} type="video/ogg" />
           <source src={videoUrl} type="video/mpv" />
