@@ -47,7 +47,7 @@ const Vision = () => {
                       alt="vision icons"
                       width={100}
                       height={114}
-                      className="!w-[56px] !h-[62px] md:!w-[100px] md!h-[114px]"
+                      className="!w-[56px] !h-[62px] md:!w-[100px] md:!h-[114px]"
                       priority
                     />
                     <h4 className="select-none text-lg md:text-xl font-bold font-satoshi text-white lg:max-w-[360px]">{item.title}</h4>
