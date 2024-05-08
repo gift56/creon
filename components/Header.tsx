@@ -81,6 +81,12 @@ const Header = () => {
               )}
             </Link>
           ))}
+          <button
+            type="button"
+            className="text-base md:text-lg font-semibold text-white font-satoshi outline-none border-2 border-white py-2 px-8 rounded-md hover:bg-primary transition-all duration-300"
+          >
+            Connect
+          </button>
         </nav>
       </nav>
     </header>
