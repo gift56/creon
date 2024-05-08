@@ -15,13 +15,13 @@
   src: url("/public/fonts/MonumentExtended-Regular.woff2") format("woff2");
   font-style: normal;
 }
-
-body{
-  @apply bg-black text-white font-Satoshi
-}
-
-.contain{
-  @apply w-[90%] md:w-[85%] mx-auto
+@layer base {
+  body {
+    @apply bg-black text-white font-satoshi;
+  }
+  .contain {
+    @apply w-[90%] md:w-[85%] mx-auto;
+  }
 }
 
 ::selection {
