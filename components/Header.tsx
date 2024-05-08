@@ -119,7 +119,7 @@ const Header = () => {
       >
         <div
           ref={modalRef}
-          className="flex flex-col items-start justify-between h-full bg-black text-white p-4 w-[250px]"
+          className="flex flex-col items-start justify-between h-full bg-black text-white py-4 px-7 w-[250px]"
         >
           <div className="w-full flex flex-col items-start gap-8">
             <div className="w-full flex items-center justify-end gap-6">
@@ -155,8 +155,14 @@ const Header = () => {
           </div>
           <div className="flex items-center justify-start gap-4">
             {socialIcons.map((item, index) => (
-              <Link key={index} href={item.href} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border-2 border-white">
-                <item.icon />
+              <Link
+                key={index}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center"
+              >
+                <item.icon size={20} />
               </Link>
             ))}
           </div>
