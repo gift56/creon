@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth !important;
+}
+
 @font-face {
   font-family: "Satoshi", sans-serif;
   src: url("/fonts/Satoshi-Bold.woff2") format("woff2"),
@@ -23,6 +27,7 @@
     @apply w-[90%] md:w-[85%] mx-auto;
   }
 }
+
 
 ::selection {
   background-color: #ab23ff;
