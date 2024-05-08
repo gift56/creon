@@ -5,9 +5,9 @@ const Market = () => {
   return (
     <section
       id="launchpad"
-      className="min-h-screen lg:py-30 relative bg-black/50"
+      className="min-h-screen lg:py-20 relative bg-black/50"
     >
-      <div className="absolute -bottom-10 w-full h-full">
+      <div className="absolute w-full h-[90%]">
         <video autoPlay muted loop className="w-full h-full object-cover">
           <source src="/videos/roadmap-video.mp4" type="video/mp4" />
         </video>

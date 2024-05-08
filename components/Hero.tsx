@@ -2,7 +2,7 @@ import VideoPlayer from "./Video/VideoPlayer";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen lg:pt-30 pb-10 relative flex flex-col items-start justify-end bg-black/50">
+    <section id="home" className="min-h-screen pb-10 relative flex flex-col items-start justify-end bg-black/50">
       <div className="absolute top-0 w-full h-full">
         <VideoPlayer
           thumbnailUrl="/images/herothumbnail.png"
