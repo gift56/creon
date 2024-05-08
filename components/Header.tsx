@@ -43,10 +43,21 @@ const Header = () => {
       }
     };
 
+    const handleClickOutside: EventListener = (event) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        setMobileNav(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
