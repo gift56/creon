@@ -1,3 +1,5 @@
+import VideoPlayer from "./Video/VideoPlayer";
+
 const Vision = () => {
   return (
     <section id="vision">
@@ -6,8 +8,16 @@ const Vision = () => {
           <div className="w-full lg:flex-1">
             <h3 className="text-white text-2xl md:text-[31px] biglaptop:text-4xl lg:leading-[45.8px] font-normal font-monument uppercase">
               Our vision is to support the innovation of AI blockchain projects
-             <span className="font-monument bg-clip-text text-transparent bg-textgradient uppercase"> while prioritizing communities and democratizing profits</span>
+              <span className="font-monument bg-clip-text text-transparent bg-textgradient uppercase">
+                {" "}
+                while prioritizing communities and democratizing profits
+              </span>
             </h3>
+            <VideoPlayer
+              thumbnailUrl="/images/visionthumbnail.png"
+              videoUrl="/videos/creon-logo.mp4"
+              className="!w-full"
+            />
           </div>
           <div className="w-full lg:flex-1"></div>
         </div>
