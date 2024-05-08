@@ -18,6 +18,9 @@ const config: Config = {
         satoshi: ["Satoshi", "sans-serif"],
         monument: ["Monument Extended", "sans-serif"],
       },
+      screens: {
+        biglaptop: "1440px",
+      },
     },
   },
   plugins: [],
