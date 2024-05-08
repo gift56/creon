@@ -21,6 +21,11 @@ const PassNft = () => {
               launchpad, and a ticket to generate passive income through
               AI-driven tools
             </p>
+            <div className="w-full flex flex-col items-start justify-start gap-5">
+              {passData.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+            </div>
           </div>
           <div className="w-full lg:flex-1"></div>
         </div>
