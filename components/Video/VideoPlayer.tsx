@@ -39,9 +39,8 @@ const VideoPlayer = ({ videoUrl, thumbnailUrl, className }: VideoProp) => {
           autoPlay
           muted
           loop
-          onLoadedData={handleVideoLoad}
           className={`${className}`}
-          onCanPlay={handleVideoLoad}
+          onCanPlay={() => handleVideoLoad()}
         >
           <source src={videoUrl} type="video/mp4" />
         </video>
