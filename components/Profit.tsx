@@ -12,13 +12,26 @@ const Profit = () => {
             AI Innovation & Decentralization
           </p>
         </div>
-        <div className="w-full flex flex-col lg:flex-row lg:items-center items-start justify-start lg:justify-between gap-8">
+        <div className="w-full flex flex-col lg:flex-row lg:items-center items-start justify-start lg:justify-between gap-8 mt-12">
           <div className="w-full lg:flex-1">
             <VideoPlayer
               thumbnailUrl="/images/profitthumbnail.png"
               videoUrl="/videos/creon-logo.mp4"
               className="!w-full"
             />
+          </div>
+          <div className="w-full lg:flex-1 flex flex-col items-start justify-start gap-8">
+            <h4 className="text-lg md:text-xl font-bold font-satoshi text-white lg:max-w-[391px]">
+              The dynamic community driven business model of the future.
+            </h4>
+            <p className="text-base md:text-lg font-normal font-satoshi text-white lg:max-w-[391px]">
+              At Creon, we blend the power of AI tools with the dynamic crypto
+              and NFT markets, utilizing an innovative business model to drive
+              profitability. This approach empowers our community, as our NFT
+              and token holders directly benefit from the growth and prosperity
+              of the Creon network, creating a win-win scenario for both our
+              community and for the projects we launch.
+            </p>
           </div>
         </div>
       </div>
