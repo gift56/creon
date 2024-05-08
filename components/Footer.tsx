@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-black pb-6">
+    <footer className="bg-black pt-6 lg:pt-0 pb-6">
       <div className="contain">
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-5">
           <div className="w-full md:w-fit flex flex-col md:flex-row items-start justify-start gap-3 md:gap-6">
