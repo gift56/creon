@@ -6,7 +6,7 @@ export const visionData = [
   },
 ];
 
-export const socailIcons = [
+export const socialIcons = [
   {
     icon: FaTelegramPlane,
     href: "https://telegram.com",

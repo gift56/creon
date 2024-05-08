@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { MdClose } from "react-icons/md";
-import { FaBars, FaDiscord, FaTelegramPlane, FaTwitter } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+import { socialIcons } from "@/constant";
 
 const navLinks = [
   {
@@ -151,6 +152,13 @@ const Header = () => {
                 </Link>
               ))}
             </nav>
+          </div>
+          <div className="flex items-center justify-start gap-4">
+            {socialIcons.map((item,indes)=>(
+              <Link href={item.href} target="_blank" rel="noopener noreferrer">
+                
+              </Link>
+            ))}
           </div>
         </div>
       </div>
