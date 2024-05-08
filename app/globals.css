@@ -20,6 +20,10 @@ body{
   @apply bg-black text-white
 }
 
+.contain{
+  @apply w-[90%] md:w-[85%] mx-auto
+}
+
 ::selection {
   background-color: #ab23ff;
   color: white;
