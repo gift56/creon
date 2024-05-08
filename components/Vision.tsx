@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Vision = () => {
-  return (
-    <section>Vision</section>
-  )
-}
+  return <section id="vision">Vision</section>;
+};
 
-export default Vision
+export default Vision;
