@@ -1,9 +1,7 @@
-import React from 'react'
+
 
 const Profit = () => {
-  return (
-    <section>Profit</section>
-  )
-}
+  return <section className="bg-black py-14 lg:py-20">Profit</section>;
+};
 
-export default Profit
+export default Profit;
