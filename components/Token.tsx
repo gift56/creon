@@ -10,7 +10,7 @@ const Token = () => {
               key={index}
               className="w-full relative bg-[#13171D99] flex flex-col items-start justify-start gap-4 rounded-md"
             >
-              <div className="px-4 md:px-6 py-5 rounded-tr-md rounded-tl-md flex flex-col items-start gap-3">
+              <div className="px-4 md:px-5 py-5 rounded-tr-md rounded-tl-md flex flex-col items-start gap-3">
                 <h3 className="text-white text-2xl md:text-[31px] biglaptop:text-4xl lg:leading-[45.8px] font-normal font-monument uppercase">
                   {item.title}
                 </h3>
