@@ -16,6 +16,10 @@
   font-style: normal;
 }
 
+body{
+  @apply bg-black text-white
+}
+
 ::selection {
   background-color: #ab23ff;
   color: white;
