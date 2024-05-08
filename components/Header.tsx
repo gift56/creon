@@ -69,7 +69,7 @@ const Header = () => {
     >
       <nav
         aria-label="navigation"
-        className="w-full px-[40px] flex items-center justify-between py-4"
+        className="w-full px-4 lg:px-[40px] flex items-center justify-between py-4"
       >
         <Link href="/">
           <Image
@@ -105,11 +105,28 @@ const Header = () => {
         </nav>
         <span
           onClick={() => setMobileNav((prev) => !prev)}
-          className="w-10 h-10 flex tab:hidden items-center justify-center bg-white text-primary rounded-lg"
+          className="w-10 h-10 flex lg:hidden items-center justify-center bg-white text-primary rounded-lg"
         >
           {mobileNav === false && <FaBars size={25} />}
         </span>
       </nav>
+
+      <div
+        className={`${
+          mobileNav ? "right-0" : "-right-[326%]"
+        } lg:hidden flex justify-end h-screen bg-black/40 gap-7 absolute top-0 w-full z-40 transition-all duration-300`}
+      >
+        <div
+          ref={modalRef}
+          className="flex flex-col h-full bg-white gap-5 p-4 w-[250px]"
+        >
+          <div className="w-full flex items-center justify-end">
+            <span className="text-dark" onClick={() => setMobileNav(false)}>
+              <MdClose size={25} />
+            </span>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };
