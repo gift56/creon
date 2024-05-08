@@ -90,7 +90,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               key={index}
-              className="text-base md:text-lg font-semibold text-white font-satoshi flex items-start justify-start gap-2"
+              className="text-base md:text-lg font-semibold text-white font-satoshi flex items-start justify-start gap-2 cursor-pointer hover:text-primary transition-all"
             >
               {item.text}{" "}
               {item.soonText === true && (
@@ -147,7 +147,7 @@ const Header = () => {
                   smooth={true}
                   key={index}
                   onClick={() => setMobileNav(false)}
-                  className="text-base md:text-lg font-semibold text-white font-satoshi flex items-start justify-start gap-2"
+                  className="text-base md:text-lg font-semibold text-white font-satoshi flex items-start justify-start gap-2 cursor-pointer hover:text-primary transition-all"
                 >
                   {item.text}{" "}
                   {item.soonText === true && (
