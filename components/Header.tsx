@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const navLinks = [
   {
     text: "Creon Pass",
-    href: "/",
+    href: "/pass",
     soonText: false,
   },
   {
@@ -17,12 +17,12 @@ const navLinks = [
   },
   {
     text: "AI Revenue",
-    href: "/token",
+    href: "/revenue",
     soonText: true,
   },
   {
     text: "AI Launchpad",
-    href: "/token",
+    href: "/launchpad",
     soonText: true,
   },
 ];
