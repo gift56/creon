@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import { useEffect, useRef, useState } from "react";
 import { MdClose } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
@@ -84,8 +85,10 @@ const Header = () => {
         </Link>
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((item, index) => (
-            <Link
-              href={item.href}
+            <ScrollLink
+              to={item.href}
+              spy={true}
+              smooth={true}
               key={index}
               className="text-base md:text-lg font-semibold text-white font-satoshi flex items-start justify-start gap-2"
             >
@@ -95,7 +98,7 @@ const Header = () => {
                   SOON
                 </span>
               )}
-            </Link>
+            </ScrollLink>
           ))}
           <button
             type="button"
@@ -138,9 +141,12 @@ const Header = () => {
             </div>
             <nav className="flex flex-col w-full items-start justify-start gap-6">
               {navLinks.map((item, index) => (
-                <Link
-                  href={item.href}
+                <ScrollLink
+                  to={item.href}
+                  spy={true}
+                  smooth={true}
                   key={index}
+                  onClick={() => setMobileNav(false)}
                   className="text-base md:text-lg font-semibold text-white font-satoshi flex items-start justify-start gap-2"
                 >
                   {item.text}{" "}
@@ -149,7 +155,7 @@ const Header = () => {
                       SOON
                     </span>
                   )}
-                </Link>
+                </ScrollLink>
               ))}
             </nav>
           </div>
