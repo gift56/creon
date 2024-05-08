@@ -42,7 +42,15 @@ const Vision = () => {
               >
                 <div className="w-full flex items-center justify-between gap-3">
                   <div className="flex items-center justify-start gap-4">
-                    <Image src={item.image} alt="vision icons" width={56} height={62} className="" priority />
+                    <Image
+                      src={item.image}
+                      alt="vision icons"
+                      width={56}
+                      height={62}
+                      className=""
+                      priority
+                    />
+                    <h4 className="select-none text-lg md:text-xl font-bold font-satoshi text-white lg:max-w-[391px]">{item.title}</h4>
                   </div>
                   <span className="cursor-pointer">
                     <IoChevronDown
