@@ -1,12 +1,14 @@
 import { socialIcons } from "@/constant";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="bg-black pb-6">
       <div className="contain">
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-5">
-          <div className="w-full flex items-start justify-start gap-3">
-            <p className="text-base font-normal text-white">
+          <div className="w-full flex items-start justify-start gap-3 md:gap-6">
+            <p className="text-base font-normal text-white font-satoshi">
               © Creon 2023. All rights reserved.
             </p>
             <div className="flex items-center justify-start gap-4">
@@ -23,7 +25,16 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div></div>
+          <p className="text-base font-normal text-white font-satoshi flex items-center gap-1">
+            Powered by{" "}
+            <Image
+              src="/images/nftlogo.png"
+              alt="nftables logo"
+              width={101}
+              height={18}
+              priority
+            />
+          </p>
         </div>
       </div>
     </footer>
