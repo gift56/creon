@@ -43,7 +43,18 @@ const Header = () => {
           />
         </Link>
         <nav>
-          <Link href="/" className="text-base md:text-lg font-semibold text-white font-satoshi">Creon Pass</Link>
+          <Link
+            href="/"
+            className="text-base md:text-lg font-semibold text-white font-satoshi"
+          >
+            Creon Pass
+          </Link>
+          <Link
+            href="/token"
+            className="text-base md:text-lg font-semibold text-white font-satoshi flex items-start justify-start gap-2"
+          >
+            Token <span className="text-primary bg-black text-xs font-satoshi rounded-full py-0.5 px-1">SOON</span>
+          </Link>
         </nav>
       </nav>
     </header>
