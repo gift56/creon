@@ -14,6 +14,7 @@ const Hero = () => {
         <h1 className="text-white text-5xl lg:text-[68px] lg:leading-[74.8px] font-normal font-monument">
           The world's first platform for Tokenizing AI blockchain projects
         </h1>
+        <p>Hold the Creon Pass NFT and earn passive income from AI Tools</p>
       </div>
     </section>
   );
