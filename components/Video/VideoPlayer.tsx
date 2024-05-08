@@ -43,8 +43,6 @@ const VideoPlayer = ({ videoUrl, thumbnailUrl, className }: VideoProp) => {
           className={`${className}`}
         >
           <source src={videoUrl} type="video/mp4" />
-          <source src={videoUrl} type="video/ogg" />
-          <source src={videoUrl} type="video/mpv" />
         </video>
       )}
     </div>
