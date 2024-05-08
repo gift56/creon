@@ -17,7 +17,7 @@ const PassNft = () => {
             <h2 className="text-white text-3xl md:text-5xl lg:leading-[74.8px] font-normal font-monument uppercase">
               creon pass nft
             </h2>
-            <p className="text-xl font-bold font-satoshi bg-clip-text text-transparent bg-textgradient">
+            <p className="text-lg md:text-xl font-bold font-satoshi bg-clip-text text-transparent bg-textgradient">
               The Creon NFT pass unlocks access to AI projects, the Creon
               launchpad, and a ticket to generate passive income through
               AI-driven tools
@@ -34,7 +34,7 @@ const PassNft = () => {
             </div>
             <button
               type="button"
-              className="bg-textgradient outline-none border-none py-3 px-28 rounded-md text-lg font-bold text-white font-satoshi"
+              className="bg-textgradient outline-none border-none py-3 px-14 md:px-28 rounded-md text-lg font-bold text-white font-satoshi"
             >
               Buy Creon Pass
             </button>
