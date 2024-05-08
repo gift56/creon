@@ -7,7 +7,7 @@ const Hero = () => {
         <VideoPlayer
           thumbnailUrl="/images/herothumbnail.png"
           videoUrl="/videos/main-background-video.mp4"
-          className="!w-full !h-full !object-cover"
+          className="!w-full !h-full"
         />
       </div>
       <div className="contain relative z-10 h-[70%] flex flex-col gap-5 lg:gap-0 items-start justify-end">
