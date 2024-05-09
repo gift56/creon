@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 type VideoProp = {
   videoUrl: string;
@@ -12,27 +13,23 @@ type VideoProp = {
 const VideoPlayer = ({ videoUrl, thumbnailUrl, className }: VideoProp) => {
   const [showVideo, setShowVideo] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const { ref, inView } = useInView({
+    threshold: 0.5, // Trigger when 50% of the component is in view
+    triggerOnce: true, // Trigger only once
+  });
 
   useEffect(() => {
-    const videoElement = videoRef.current;
-    if (!videoElement) return;
-
-    const handleVideoCanPlay = () => {
+    if (inView) {
       setShowVideo(true);
-    };
+    }
+  }, [inView]);
 
-    videoElement.addEventListener("canplay", handleVideoCanPlay);
-
-    return () => {
-      videoElement.removeEventListener("canplay", handleVideoCanPlay);
-    };
-  }, []);
   const handleThumbnailClick = () => {
     setShowVideo(true);
   };
 
   return (
-    <div className={`${className}`}>
+    <div className={`${className}`} ref={ref}>
       {!showVideo && (
         <Image
           src={thumbnailUrl}
