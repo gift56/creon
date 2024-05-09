@@ -1,17 +1,36 @@
 import { tokenData } from "@/constant";
 import Image from "next/image";
+import { MotionContainer } from "./MotionContainer";
 
 const Token = () => {
+  const stagger = 0.25;
+
+  const variants = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: { opacity: 1, scale: 1 },
+  };
+
   return (
     <section id="token" className="bg-black py-14 lg:py-20">
       <div className="contain">
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 items-start justify-start gap-6">
           {tokenData.map((item, index) => (
-            <div
+            <MotionContainer
               key={index}
+              variants={variants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{
+                delay: index * stagger,
+                ease: "easeInOut",
+                duration: 0.5,
+              }}
               className="w-full lg:min-h-[659px] relative bg-[#13171D99] flex flex-col items-start justify-start gap-4 rounded-md"
             >
-              <span className="bg-white rounded-full py-0.5 px-1 absolute -top-2 select-none right-5 text-black text-xs font-bold font-satoshi uppercase">COMING SOON</span>
+              <span className="bg-white rounded-full py-0.5 px-1 absolute -top-2 select-none right-5 text-black text-xs font-bold font-satoshi uppercase">
+                COMING SOON
+              </span>
               <div className="px-4 md:px-5 py-5 rounded-tr-md rounded-tl-md flex flex-col items-start gap-3">
                 <h3 className="text-white text-2xl md:text-[31px] biglaptop:text-4xl lg:leading-[45.8px] font-normal font-monument uppercase">
                   {item.title}
@@ -34,7 +53,7 @@ const Token = () => {
                 token holders with unparalleled access to our Launchpad, AI
                 tools, and exclusive pre-launch investment prospects.
               </p>
-            </div>
+            </MotionContainer>
           ))}
         </div>
       </div>

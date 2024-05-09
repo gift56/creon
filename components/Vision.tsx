@@ -20,7 +20,7 @@ const Vision = () => {
       <div className="contain">
         <div className="w-full flex flex-col lg:flex-row items-start justify-start lg:justify-between gap-8">
           <div className="w-full lg:flex-1">
-            <h3 className="text-white text-2xl md:text-[31px] biglaptop:text-4xl lg:leading-[45.8px] font-normal font-monument uppercase">
+            <h3 className="text-white text-2xl md:text-[31px] biglaptop:text-4xl lg:leading-[45.8px] font-normal font-monument uppercase mb-4">
               Our vision is to support the innovation of AI blockchain projects
               <span className="font-monument bg-clip-text text-transparent bg-textgradient uppercase">
                 {" "}

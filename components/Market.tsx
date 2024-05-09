@@ -1,7 +1,15 @@
 import { marketData } from "@/constant";
 import Image from "next/image";
+import { MotionContainer } from "./MotionContainer";
 
 const Market = () => {
+  const stagger = 0.25;
+
+  const variants = {
+    hidden: { opacity: 0, y: 60 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <section
       id="launchpad"
@@ -15,8 +23,17 @@ const Market = () => {
       <div className="contain">
         <div className="w-full relative top-0 z-20 flex flex-col gap-6 items-center justify-center group">
           {marketData.map((item, index) => (
-            <div
+            <MotionContainer
               key={index}
+              variants={variants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{
+                delay: index * stagger,
+                ease: "easeInOut",
+                duration: 0.5,
+              }}
               className="w-full lg:h-[302px] bg-[#13171D99]  flex flex-col-reverse lg:flex-row items-start justify-start gap-10 lg:items-center lg:justify-between  rounded-md overflow-hidden"
             >
               <div className="flex flex-col px-4 justify-center gap-5 h-full w-full lg:flex-1">
@@ -37,7 +54,7 @@ const Market = () => {
                   className="!w-full !h-[304px] rounded-tl-md rounded-tr-md lg:rounded-tl-none lg:rounded-br-md object-cover"
                 />
               </div>
-            </div>
+            </MotionContainer>
           ))}
         </div>
       </div>

@@ -20,7 +20,8 @@ const Profit = () => {
             initial={{ opacity: 0, y: -60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ type: "spring", duration: 2, delay: 1 }}
+            transition={{ type: "spring", duration: 2, delay: 0.2 }}
+            className=" text-end w-full"
           >
             <p className="text-xl md:text-2xl lg:text-3xl font-normal font-monument text-end w-full bg-clip-text text-transparent bg-textgradient uppercase">
               AI Innovation & Decentralization
