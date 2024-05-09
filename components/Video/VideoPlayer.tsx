@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type VideoProp = {
   videoUrl: string;
@@ -11,20 +11,29 @@ type VideoProp = {
 
 const VideoPlayer = ({ videoUrl, thumbnailUrl, className }: VideoProp) => {
   const [showVideo, setShowVideo] = useState(false);
-  const [videoLoaded, setVideoLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const handleVideoLoad = () => {
-    setVideoLoaded(true);
-  };
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    if (!videoElement) return;
 
+    const handleVideoCanPlay = () => {
+      setShowVideo(true);
+    };
+
+    videoElement.addEventListener("canplay", handleVideoCanPlay);
+
+    return () => {
+      videoElement.removeEventListener("canplay", handleVideoCanPlay);
+    };
+  }, []);
   const handleThumbnailClick = () => {
     setShowVideo(true);
   };
 
   return (
     <div className={`${className}`}>
-      {!showVideo && !videoLoaded && (
+      {!showVideo && (
         <Image
           src={thumbnailUrl}
           alt="Video Thumbnail"
@@ -36,7 +45,7 @@ const VideoPlayer = ({ videoUrl, thumbnailUrl, className }: VideoProp) => {
         />
       )}
       {showVideo && (
-        <video autoPlay muted loop className={`${className}`}>
+        <video autoPlay muted loop ref={videoRef} className={`${className}`}>
           <source src={videoUrl} type="video/mp4" />
         </video>
       )}
